@@ -1,8 +1,11 @@
 <script setup lang="ts">
-console.log('vue page');
+
+function onClick(params:type) {
+	console.log('vue page');
+}
 </script>
 <template>
-	<div class="vue-page">
+	<div class="vue-page" @click="onClick">
 		vue page
 	</div>
 </template>
